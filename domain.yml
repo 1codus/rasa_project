@@ -1,0 +1,42 @@
+version: "3.1"
+
+intents:
+  - ask_faculty_info
+  - ask_professor_info
+  - ask_course_info
+  - goodbye
+  - bot_challenge
+
+entities:
+  - faculty
+  - department
+  - professor
+  - course
+
+slots:
+  faculty:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: faculty
+
+responses:
+  utter_ask_faculty_info:
+    - text: "어떤 단과대학 정보를 원하시나요? \n 1.상경대학\n2.의료보건생활대학\n3.예술디자인체육대학\n4.소프트웨어융합대학\n5.한의과대학"
+
+  utter_ask_professor_info:
+    - text: "어떤 교수님 정보를 원하시나요?"
+
+  utter_ask_course_info:
+    - text: "어떤 과목 정보를 원하시나요?"
+
+  utter_goodbye:
+    - text: "안녕히가세요"
+
+  utter_iamabot:
+    - text: "전 로봇이라우"
+
+actions:
+  - action_fetch_faculty_info
+  - action_fetch_professor_info
+  - action_fetch_course_info

@@ -1,0 +1,83 @@
+version: "3.0"
+nlu:
+  #단과대학 정보
+  - intent: ask_faculty_info
+    examples: |
+      - 공과대학에 어떤 학과가 있나요?
+      - [공과대학](faculty)에 있는 학과를 알려줘
+      - [인문사회대학](faculty)에는 어떤 학과가 포함되어 있나요?
+      - [상경대학](faculty)에 대해 알고 싶어요
+      - 나는 [의료보건생활대학](faculty)에 대해 궁금해
+      - [소프트웨어융합대학](faculty)에 대해 알려줘
+
+  #교수님 정보
+  - intent: ask_professor_info
+    examples: |
+      - [홍길동] 교수님에 대해 알려줘
+      - [이순신] 교수님은 어떤 분야를 연구하시나요?
+      - [김철수] 교수님 정보
+      - 철학과 [장보고] 교수님 정보
+
+  #수업 정보
+  - intent: ask_course_info
+    examples: |
+      - [알고리즘] 과목에 대해 알려줘
+      - [운영체제] 강의 정보
+
+  - intent: goodbye
+    examples: |
+      - 고마워
+      - 잘가
+
+  - intent: bot_challenge
+    examples: |
+      - 너 누구야
+      - 누구야 넌
+
+  - lookup: faculty
+    examples: |
+      - 공과대학
+      - 상경대학
+      - 인문사회과학대학
+      - 의료보건생활대학
+      - 예술디자인체육대학
+      - 소프트웨어융합대학
+      - 한의과대학
+
+  - synonym: 공과대학
+    examples: |
+      - 공대
+      - 공과대
+      - 압도 공과대학
+      - 압도
+
+  - synonym: 상경대학
+    examples: |
+      - 상대
+      - 애국 상경대학
+      - 이터니티 상경대학
+
+  - synonym: 인문사회과학대학
+    examples: |
+      - 인사대
+      - 인대
+
+  - synonym: 의료보건생활대학
+    examples: |
+      - 의보생대
+      - 의보대
+
+  - synonym: 예술디자인체육대학
+    examples: |
+      - 예디체
+
+  - synonym: 소프트웨어융합대학
+    examples: |
+      - 소융대
+      - 소프트융합대학
+
+
+  - synonym: 소프트웨어융합대학
+    examples: |
+      - 소융대
+      - 소프트융합대학

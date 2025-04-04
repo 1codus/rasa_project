@@ -1,0 +1,26 @@
+version: "3.0"
+stories:
+  - story: 단과대학 정보
+    steps:
+      - intent: ask_faculty_info
+      - action: utter_ask_faculty_info
+
+  - story: 교수님 정보
+    steps:
+      - intent: ask_professor_info
+      - action: utter_ask_professor_info
+
+  - story: 강의 정보
+    steps:
+      - intent: ask_course_info
+      - action: utter_ask_course_info
+
+  - story: 종료 인사
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: 너 누구야
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot

@@ -1,0 +1,13 @@
+version: "3.1"
+
+rules:
+
+- rule: 굿바이 인사
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: 나는 로봇
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot

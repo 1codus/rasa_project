@@ -1,0 +1,74 @@
+{
+  "university": {
+    "name": "동의대학교",
+    "faculties": [
+      {
+        "name": "공과대학",
+        "departments": [
+          {
+            "name": "컴퓨터공학과",
+            "professors": [
+              {
+                "name": "홍길동",
+                "specialization": "인공지능"
+              },
+              {
+                "name": "김철수",
+                "specialization": "소프트웨어공학"
+              }
+            ],
+            "courses": [
+              {
+                "name": "알고리즘",
+                "credits": 3
+              },
+              {
+                "name": "운영체제",
+                "credits": 3
+              }
+            ]
+          },
+          {
+            "name": "기계공학과",
+            "professors": [
+              {
+                "name": "이순신",
+                "specialization": "로봇 공학"
+              }
+            ],
+            "courses": [
+              {
+                "name": "기계 설계",
+                "credits": 3
+              },
+              {
+                "name": "열역학",
+                "credits": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "인문대학",
+        "departments": [
+          {
+            "name": "철학과",
+            "professors": [
+              {
+                "name": "장보고",
+                "specialization": "윤리학"
+              }
+            ],
+            "courses": [
+              {
+                "name": "서양철학",
+                "credits": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
